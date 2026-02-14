@@ -1,0 +1,4 @@
+Execution time (custom): 0.4172 seconds
+Execution time (einsum): 0.2445 seconds
+Execution time (CUDA): 0.0666 seconds
+Execution time (cv): 0.0347 seconds
