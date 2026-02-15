@@ -78,8 +78,8 @@ def show_lucas_kanade(
   new_mask = np.zeros_like(next_image)
   
   for prev, new, color in zip(good_previous, good_new, colors, strict=True):
-    old_mask = cv.circle(old_mask, tuple(prev.astype(int)), 10, tuple(color.tolist()), -1)
-    new_mask = cv.circle(new_mask, tuple(new.astype(int)), 10, tuple(color.tolist()), -1)
+    old_mask = cv.circle(old_mask, tuple(prev.astype(int)), 10, tuple(color.tolist()), 2)
+    new_mask = cv.circle(new_mask, tuple(new.astype(int)), 10, tuple(color.tolist()), 2)
 
   old_result = cv.add(previous_image, old_mask)
   new_result = cv.add(next_image, new_mask)
